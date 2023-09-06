@@ -19,19 +19,18 @@ bt.traversePostOrder(bt.root);
 
 //Part 2 - Binary Heap
 
-// Heap bh = new Heap();
+Heap bh = new Heap();
 		
-// bh.insert(47);
-// bh.insert(57);
-// bh.insert(23);
-// bh.insert(42);
-// bh.insert(31);
-// bh.insert(29);
-// bh.insert(17);
+bh.insert(47);
+bh.insert(57);
+bh.insert(23);
+bh.insert(42);
+bh.insert(31);
+bh.insert(29);
+bh.insert(17);
 
-// System.out.println("Binary Heap : ");
-// bh.printHeap();
-// System.out.println("Size : ");
-// System.out.println("Maximum value from the tree : ");
-
-// System.out.println("Elements in descending order : ");
+Console.WriteLine("Binary Heap : ");
+bh.printHeap();
+Console.WriteLine("Size : ");
+Console.WriteLine("Maximum value from the tree : ");
+Console.WriteLine("Elements in descending order : ");

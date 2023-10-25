@@ -7,8 +7,7 @@
 
 public class BinaryTree 
 {
-
-    public Node root;
+    public Node root=null;
     
     private Node addRecursive(Node current, int value) {
         if (current == null) { //set the root if its a new tree
@@ -28,16 +27,15 @@ public class BinaryTree
     }
     
     public void add(int value) {
-        this.root = addRecursive(root, value);
+        root = addRecursive(root, value);
     }
     
-    public static BinaryTree createBinaryTree(int [] data) {
-        BinaryTree bt = new BinaryTree();
+    public void createBinaryTree(int [] data) {
         
         foreach (int x in data) {
-            bt.add(x);
+            add(x);
         }
-        return bt;
+        
     }
     
     public Boolean containsNodeRecursive(Node current, int value) {
@@ -103,17 +101,18 @@ public class BinaryTree
     //Depth First Search: Root=>Left=>Right
     public void traversePreOrder(Node node) {
         
+        //Complete this method
     }
     
     
     //Left=>Right=>Node
     public void traversePostOrder(Node node) {
-        
+        //Complete this method
     }
     
     //Breadth-First Search: visit all the nodes present at the same level one-by-one from left to right and then move to the next level to visit all the nodes of that level.
     public void traverseLevelOrder() {
-        
+        //Complete this method
     }
     
     private void visit(int value) {
@@ -128,8 +127,8 @@ public class BinaryTree
     public Node left;
     public Node right;
 
-    public Node(int value) {
-        value = value;
+    public Node(int data) {
+        value = data;
         right = null;
         left = null;
     }

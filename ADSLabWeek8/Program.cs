@@ -6,7 +6,8 @@ BinaryTree bt = new BinaryTree();
 	
 int [] data = {57,20,68,15,21,65,80,60,67,70,85};
 
-bt = BinaryTree.createBinaryTree(data);
+bt.createBinaryTree(data);
+
 Console.WriteLine("==Pre-order==");
 bt.traversePreOrder(bt.root);
 Console.WriteLine("\n==Level Order==");

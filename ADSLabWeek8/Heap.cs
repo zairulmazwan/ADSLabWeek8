@@ -90,9 +90,8 @@ public class Heap {
     }
     
     // deletes the max item and return
-    public static int deleteNode(int i) {
-        int node = heap[i];
-
+    public static void deleteNode(int i) {
+       
         // replace the first item with the last item
         heap[i] = heap[size - 1];
         size = size - 1;
@@ -100,7 +99,6 @@ public class Heap {
         // maintain the heap property by heapifying the 
         // first item
         maxHeapify(i);
-        return node;
     }
     
     public static int [] descending() {
